@@ -1,0 +1,239 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1.2cm]{geometry}
+\usepackage{array}
+\usepackage{xstring}
+\usepackage{fontspec}
+
+% ---------------- Fonts ----------------
+\setmainfont{Noto Serif}
+\newfontfamily\devfont{Noto Serif Devanagari}
+
+% ---------------- Hindi numerals ----------------
+\newcommand{\hinum}[1]{%
+\StrSubstitute{#1}{0}{०}[\temp]%
+\StrSubstitute{\temp}{1}{१}[\temp]%
+\StrSubstitute{\temp}{2}{२}[\temp]%
+\StrSubstitute{\temp}{3}{३}[\temp]%
+\StrSubstitute{\temp}{4}{४}[\temp]%
+\StrSubstitute{\temp}{5}{५}[\temp]%
+\StrSubstitute{\temp}{6}{६}[\temp]%
+\StrSubstitute{\temp}{7}{७}[\temp]%
+\StrSubstitute{\temp}{8}{८}[\temp]%
+\StrSubstitute{\temp}{9}{९}[\temp]%
+\temp}
+
+% ---------------- Styles ----------------
+\newcommand{\ossdate}[1]{{\Large\bfseries\devfont \hinum{#1}}}
+\newcommand{\gdate}[1]{{\small #1}}
+
+% ---------------- Box style ----------------
+\setlength{\fboxsep}{2.5pt}
+\setlength{\fboxrule}{0.6pt}
+
+\newcommand{\datebox}[2]{%
+\vspace{4pt}%  <-- vertical gap ABOVE each box
+\fbox{%
+\begin{minipage}[c][1.55cm][c]{2.35cm} % narrower + shorter ; center vertically
+\centering
+\ossdate{#1}\\[0.5pt]
+\gdate{#2}
+\end{minipage}}}
+
+% ---------------- Weekday header box ----------------
+\newcommand{\wdaybox}[1]{%
+\fbox{%
+\begin{minipage}[c][0.9cm][c]{2.35cm}
+\centering\bfseries\devfont #1
+\end{minipage}}}
+
+
+% ---------------- Cell ----------------
+\renewcommand{\cell}[2]{\datebox{#1}{#2}}
+
+
+
+% ---------------- Calendar grid ----------------
+\newenvironment{calgrid}{
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{>{\centering}m{2.35cm}>{\centering}m{2.35cm}>{\centering}m{2.35cm}
+>{\centering}m{2.35cm}>{\centering}m{2.35cm}>{\centering}m{2.35cm}
+>{\centering\arraybackslash}m{2.35cm}}
+\wdaybox{रवि} & \wdaybox{सोम} & \wdaybox{मंगल} & \wdaybox{बुध} &
+\wdaybox{गुरु} & \wdaybox{शुक्र} & \wdaybox{शनि}\\[4pt]
+}{\\
+\end{tabular}}
+
+
+\newcommand{\monthblock}[2]{%
+\section*{\devfont{#1 — प्राचीन शक संवत् \hinum{2150}} \hfill (#2)}}
+
+\begin{document}
+
+\begin{center}
+{\LARGE\bfseries \devfont{प्राचीन शक संवत् \hinum{2150}}}\\[3pt]
+{\Large Gregorian Calendar 2026--27}
+\end{center}
+
+% =========================================================
+% सौर वैशाख / मेष  (incorrectly marked Chaitra previously) — starts Sun 22 Mar 2026
+% =========================================================
+\monthblock{सौर वैशाख / मेष / वसंत}{2026}
+\begin{calgrid}
+\cell{1}{22 Mar} & \cell{2}{23} & \cell{3}{24} & \cell{4}{25} & \cell{5}{26} & \cell{6}{27} & \cell{7}{28} \\
+\cell{8}{29} & \cell{9}{30} & \cell{10}{31} & \cell{11}{1 Apr} & \cell{12}{2} & \cell{13}{3} & \cell{14}{4} \\
+\cell{15}{5} & \cell{16}{6} & \cell{17}{7} & \cell{18}{8} & \cell{19}{9} & \cell{20}{10} & \cell{21}{11} \\
+\cell{22}{12} & \cell{23}{13} & \cell{24}{14} & \cell{25}{15} & \cell{26}{16} & \cell{27}{17} & \cell{28}{18} \\
+\cell{29}{19} & \cell{30}{20} &  &  &  &  &  \\
+\end{calgrid}
+
+
+% =========================================================
+% सौर ज्येष्ठ / वृषभ — starts Tue 21 Apr 2026
+% =========================================================
+\monthblock{सौर ज्येष्ठ / वृषभ / ग्रीष्म}{2026}
+\begin{calgrid}
+ &  & \cell{1}{21 Apr} & \cell{2}{22} & \cell{3}{23} & \cell{4}{24} & \cell{5}{25} \\
+\cell{6}{26} & \cell{7}{27} & \cell{8}{28} & \cell{9}{29} & \cell{10}{30} & \cell{11}{1 May} & \cell{12}{2} \\
+\cell{13}{3} & \cell{14}{4} & \cell{15}{5} & \cell{16}{6} & \cell{17}{7} & \cell{18}{8} & \cell{19}{9} \\
+\cell{20}{10} & \cell{21}{11} & \cell{22}{12} & \cell{23}{13} & \cell{24}{14} & \cell{25}{15} & \cell{26}{16} \\
+\cell{27}{17} & \cell{28}{18} & \cell{29}{19} & \cell{30}{20} & \cell{31}{21} &  &  \\
+\end{calgrid}
+
+\newpage
+
+% =========================================================
+% सौर आषाढ़ / मिथुन — starts Fri 22 May 2026
+% =========================================================
+\monthblock{सौर आषाढ़ / मिथुन / ग्रीष्म}{2026}
+\begin{calgrid}
+ &  &  &  &  & \cell{1}{22 May} & \cell{2}{23} \\
+\cell{3}{24} & \cell{4}{25} & \cell{5}{26} & \cell{6}{27} & \cell{7}{28} & \cell{8}{29} & \cell{9}{30} \\
+\cell{10}{31} & \cell{11}{1 Jun} & \cell{12}{2} & \cell{13}{3} & \cell{14}{4} & \cell{15}{5} & \cell{16}{6} \\
+\cell{17}{7} & \cell{18}{8} & \cell{19}{9} & \cell{20}{10} & \cell{21}{11} & \cell{22}{12} & \cell{23}{13} \\
+\cell{24}{14} & \cell{25}{15} & \cell{26}{16} & \cell{27}{17} & \cell{28}{18} & \cell{29}{19} & \cell{30}{20} \\
+\cell{31}{21} &  &  &  &  &  &  \\
+\end{calgrid}
+
+
+% =========================================================
+% सौर श्रावण / कर्क — starts Mon 22 Jun 2026
+% =========================================================
+\monthblock{सौर श्रावण / कर्क / वर्षा}{2026}
+\begin{calgrid}
+ & \cell{1}{22 Jun} & \cell{2}{23} & \cell{3}{24} & \cell{4}{25} & \cell{5}{26} & \cell{6}{27} \\
+\cell{7}{28} & \cell{8}{29} & \cell{9}{30} & \cell{10}{1 Jul} & \cell{11}{2} & \cell{12}{3} & \cell{13}{4} \\
+\cell{14}{5} & \cell{15}{6} & \cell{16}{7} & \cell{17}{8} & \cell{18}{9} & \cell{19}{10} & \cell{20}{11} \\
+\cell{21}{12} & \cell{22}{13} & \cell{23}{14} & \cell{24}{15} & \cell{25}{16} & \cell{26}{17} & \cell{27}{18} \\
+\cell{28}{19} & \cell{29}{20} & \cell{30}{21} & \cell{31}{22} &  &  &  \\
+\end{calgrid}
+
+\newpage
+
+% =========================================================
+% सौर भाद्रपद / सिंह — starts Thu 23 Jul 2026
+% =========================================================
+\monthblock{सौर भाद्रपद / सिंह / वर्षा}{2026}
+\begin{calgrid}
+ &  &  &  & \cell{1}{23 Jul} & \cell{2}{24} & \cell{3}{25} \\
+\cell{4}{26} & \cell{5}{27} & \cell{6}{28} & \cell{7}{29} & \cell{8}{30} & \cell{9}{31} & \cell{10}{1 Aug} \\
+\cell{11}{2} & \cell{12}{3} & \cell{13}{4} & \cell{14}{5} & \cell{15}{6} & \cell{16}{7} & \cell{17}{8} \\
+\cell{18}{9} & \cell{19}{10} & \cell{20}{11} & \cell{21}{12} & \cell{22}{13} & \cell{23}{14} & \cell{24}{15} \\
+\cell{25}{16} & \cell{26}{17} & \cell{27}{18} & \cell{28}{19} & \cell{29}{20} & \cell{30}{21} & \cell{31}{22} \\
+\end{calgrid}
+
+
+% =========================================================
+% सौर आश्विन / कन्या — starts Sun 23 Aug 2026
+% =========================================================
+\monthblock{सौर आश्विन / कन्या / शरद}{2026}
+\begin{calgrid}
+\cell{1}{23 Aug} & \cell{2}{24} & \cell{3}{25} & \cell{4}{26} & \cell{5}{27} & \cell{6}{28} & \cell{7}{29} \\
+\cell{8}{30} & \cell{9}{31} & \cell{10}{1 Sep} & \cell{11}{2} & \cell{12}{3} & \cell{13}{4} & \cell{14}{5} \\
+\cell{15}{6} & \cell{16}{7} & \cell{17}{8} & \cell{18}{9} & \cell{19}{10} & \cell{20}{11} & \cell{21}{12} \\
+\cell{22}{13} & \cell{23}{14} & \cell{24}{15} & \cell{25}{16} & \cell{26}{17} & \cell{27}{18} & \cell{28}{19} \\
+\cell{29}{20} & \cell{30}{21} &  &  &  &  &  \\
+\end{calgrid}
+
+\newpage
+
+% =========================================================
+% सौर कार्तिक / तुला — starts Tue 22 Sep 2026
+% =========================================================
+\monthblock{सौर कार्तिक / तुला / शरद}{2026}
+\begin{calgrid}
+ &  & \cell{1}{22 Sep} & \cell{2}{23} & \cell{3}{24} & \cell{4}{25} & \cell{5}{26} \\
+\cell{6}{27} & \cell{7}{28} & \cell{8}{29} & \cell{9}{30} & \cell{10}{1 Oct} & \cell{11}{2} & \cell{12}{3} \\
+\cell{13}{4} & \cell{14}{5} & \cell{15}{6} & \cell{16}{7} & \cell{17}{8} & \cell{18}{9} & \cell{19}{10} \\
+\cell{20}{11} & \cell{21}{12} & \cell{22}{13} & \cell{23}{14} & \cell{24}{15} & \cell{25}{16} & \cell{26}{17} \\
+\cell{27}{18} & \cell{28}{19} & \cell{29}{20} & \cell{30}{21} &  &  &  \\
+\end{calgrid}
+
+
+% =========================================================
+% सौर मार्गशीर्ष / वृश्चिक — starts Thu 22 Oct 2026
+% =========================================================
+\monthblock{सौर मार्गशीर्ष / वृश्चिक / हेमंत}{2026}
+\begin{calgrid}
+ &  &  &  & \cell{1}{22 Oct} & \cell{2}{23} & \cell{3}{24} \\
+\cell{4}{25} & \cell{5}{26} & \cell{6}{27} & \cell{7}{28} & \cell{8}{29} & \cell{9}{30} & \cell{10}{31} \\
+\cell{11}{1 Nov} & \cell{12}{2} & \cell{13}{3} & \cell{14}{4} & \cell{15}{5} & \cell{16}{6} & \cell{17}{7} \\
+\cell{18}{8} & \cell{19}{9} & \cell{20}{10} & \cell{21}{11} & \cell{22}{12} & \cell{23}{13} & \cell{24}{14} \\
+\cell{25}{15} & \cell{26}{16} & \cell{27}{17} & \cell{28}{18} & \cell{29}{19} & \cell{30}{20} &  \\
+\end{calgrid}
+
+\newpage
+
+% =========================================================
+% सौर पौष / धनु — starts Sat 21 Nov 2026
+% =========================================================
+\monthblock{सौर पौष / धनु / हेमंत}{2026}
+\begin{calgrid}
+ &  &  &  &  &  & \cell{1}{21 Nov} \\
+\cell{2}{22} & \cell{3}{23} & \cell{4}{24} & \cell{5}{25} & \cell{6}{26} & \cell{7}{27} & \cell{8}{28} \\
+\cell{9}{29} & \cell{10}{30} & \cell{11}{1 Dec} & \cell{12}{2} & \cell{13}{3} & \cell{14}{4} & \cell{15}{5} \\
+\cell{16}{6} & \cell{17}{7} & \cell{18}{8} & \cell{19}{9} & \cell{20}{10} & \cell{21}{11} & \cell{22}{12} \\
+\cell{23}{13} & \cell{24}{14} & \cell{25}{15} & \cell{26}{16} & \cell{27}{17} & \cell{28}{18} & \cell{29}{19} \\
+\cell{30}{20} &  &  &  &  &  &  \\
+\end{calgrid}
+
+
+% =========================================================
+% सौर माघ / मकर — starts Mon 21 Dec 2026
+% =========================================================
+\monthblock{सौर माघ / मकर / शिशिर}{2026--27}
+\begin{calgrid}
+ & \cell{1}{21 Dec} & \cell{2}{22} & \cell{3}{23} & \cell{4}{24} & \cell{5}{25} & \cell{6}{26} \\
+\cell{7}{27} & \cell{8}{28} & \cell{9}{29} & \cell{10}{30} & \cell{11}{31} & \cell{12}{1 Jan} & \cell{13}{2} \\
+\cell{14}{3} & \cell{15}{4} & \cell{16}{5} & \cell{17}{6} & \cell{18}{7} & \cell{19}{8} & \cell{20}{9} \\
+\cell{21}{10} & \cell{22}{11} & \cell{23}{12} & \cell{24}{13} & \cell{25}{14} & \cell{26}{15} & \cell{27}{16} \\
+\cell{28}{17} & \cell{29}{18} & \cell{30}{19} & \cell{31}{20} &  &  &  \\
+\end{calgrid}
+
+\newpage
+
+% =========================================================
+% सौर फाल्गुन / कुंभ — starts Thu 21 Jan 2027
+% =========================================================
+\monthblock{सौर फाल्गुन / कुंभ / शिशिर}{2027}
+\begin{calgrid}
+ &  &  &  & \cell{1}{21 Jan} & \cell{2}{22} & \cell{3}{23} \\
+\cell{4}{24} & \cell{5}{25} & \cell{6}{26} & \cell{7}{27} & \cell{8}{28} & \cell{9}{29} & \cell{10}{30} \\
+\cell{11}{31} & \cell{12}{1 Feb} & \cell{13}{2} & \cell{14}{3} & \cell{15}{4} & \cell{16}{5} & \cell{17}{6} \\
+\cell{18}{7} & \cell{19}{8} & \cell{20}{9} & \cell{21}{10} & \cell{22}{11} & \cell{23}{12} & \cell{24}{13} \\
+\cell{25}{14} & \cell{26}{15} & \cell{27}{16} & \cell{28}{17} & \cell{29}{18} & \cell{30}{19} &  \\
+\end{calgrid}
+
+% =========================================================
+% सौर चैत्र / मीन — starts Sat 20 Feb 2027
+% =========================================================
+\monthblock{सौर चैत्र / मीन / वसंत}{2027}
+\begin{calgrid}
+ &  &  &  &  &  & \cell{1}{20 Feb} \\
+\cell{2}{21} & \cell{3}{22} & \cell{4}{23} & \cell{5}{24} & \cell{6}{25} & \cell{7}{26} & \cell{8}{27} \\
+\cell{9}{28} & \cell{10}{1 Mar} & \cell{11}{2} & \cell{12}{3} & \cell{13}{4} & \cell{14}{5} & \cell{15}{6} \\
+\cell{16}{7} & \cell{17}{8} & \cell{18}{9} & \cell{19}{10} & \cell{20}{11} & \cell{21}{12} & \cell{22}{13} \\
+\cell{23}{14} & \cell{24}{15} & \cell{25}{16} & \cell{26}{17} & \cell{27}{18} & \cell{28}{19} & \cell{29}{20} \\
+\cell{30}{21} &  &  &  &  &  &  \\
+\end{calgrid}
+
+\end{document}
