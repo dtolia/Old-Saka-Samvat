@@ -1,5 +1,5 @@
 # Old Śaka Samvat
-Introduced by the Śakadvipi Brahmins, this calendar not only marks the rise of the Imperial Śakas but also revolutionized solar astronomy in the subcontinent.
+Introduced by the Śakadvipi Brahmins, this calendar not only marks the rise of the Imperial Śakas but also pioneered solar astronomy in the subcontinent.
 
 While originally a sidereal calendar, it was converted to a tropical system by Prof. M.N. Saha and the Calendar Reform Committee in 1957. This modernization ensured accurate seasonal alignment, making it invaluable for agriculture. 
 
