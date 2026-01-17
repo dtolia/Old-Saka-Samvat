@@ -6,7 +6,7 @@ While originally a sidereal calendar, it was converted to a tropical system by P
 Old Śaka Samvat, therefore, stands as a harmonious blend of ancient tradition and modern utility.
 
 ## Resources
-1. The Origin of the Śaka Samvat and the Case for the Old Śaka Era
+1. [The Origin of the Śaka Samvat and the Case for the Old Śaka Era](/OssHistory.md)
 
 2. Why the Sidereal Calendar needs modification?
 
