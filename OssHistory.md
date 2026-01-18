@@ -90,4 +90,9 @@ Under this reconstruction:
 
 While absolute certainty in ancient chronology is unattainable, the OSS hypothesis integrates inscriptional, numismatic, historical, and astronomical evidence with a consistency unmatched by alternative theories. It therefore stands as the most convincing explanation for the origin and evolution of the Śaka Samvat.
 
+## References
+1. "Report of the Calendar Reform Committee," Council of Scientific & Industrial Research, New Delhi, India, 1955, pp. 232-234.
+
+2. "Report of the Calendar Reform Committee," Council of Scientific & Industrial Research, New Delhi, India, 1955, pp. 255-256.
+
 ---
