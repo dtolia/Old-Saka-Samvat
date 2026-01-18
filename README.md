@@ -15,6 +15,8 @@ Old Śaka Samvat, therefore, stands as a harmonious blend of ancient tradition a
 ## LaTeX Template for Old Śaka Samvat
 Run the [Old Śaka Samvat](/OSS.tex) LaTeX on [Tex Viewer](https://texviewer.herokuapp.com) to create PDF.
 
+![Old Saka Samvat](/OSS_Sample.png "This is how the Old Saka Samvat looks.")
+
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
