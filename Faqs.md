@@ -28,3 +28,25 @@ Ayanamsa merely measures the accumulated drift caused by the precession of the e
 For example, Makar Sankranti historically coincided with the Winter Solstice (around December 21). Due to the absence of seasonal correction, it has now shifted to January 14/15.
 
 Since Ayanamsa preserves the sidereal reference rather than correcting toward the tropical year, this gap will continue to increase. In about 3,000 years, Makar Sankranti will fall in February, and in about 9,000 years, it will occur in June, during midsummer.
+
+## (Q) What about the “Adhik Maas” correction in Vikram Samvat?
+The primary “correction” in the Vikram Samvat Panchang is Adhik Maas (the intercalary or extra month).
+
+Adhik Maas is used to align the Lunar Year (approximately 354 days) with the Solar Sidereal Year (approximately 365.25 days). This ensures that festivals do not drift continuously through the year, as happens in purely lunar calendars like the Islamic calendar.
+
+However, Adhik Maas does not correct the solar year to the seasons. It aligns lunar months with the sidereal solar cycle, not with the tropical (seasonal) year.
+
+## (Q) So, is a sidereal calendar a bad calendar?
+Not necessarily. It is not “bad,” but it serves a different purpose than the calendar most people are familiar with. Whether it is good or bad depends entirely on what you want to measure.
+
+If your goal is to track seasons (agriculture, climate patterns, solstices, equinoxes), then yes—the sidereal calendar is flawed. Because it ignores the Earth’s axial precession, its months slowly drift away from the seasons they were originally associated with.
+
+For example, “Chaitra” traditionally signifies spring, but in a few thousand years, Chaitra will occur during winter.
+
+However, if your goal is to track the stars (astronomy, navigation, or cosmic positioning), the sidereal calendar is actually superior. It is locked to the physical universe beyond our solar system.
+
+If the sidereal calendar says the Moon is in Ashwini Nakshatra, you can point a telescope at the sky and the Moon will indeed be located in front of Beta Arietis (Ashwini).
+
+By contrast, if a tropical calendar says the Sun is in “Aries” (around March 21), and you observe the sky, the Sun will actually be positioned in front of the stars of Pisces. The tropical system prioritizes seasons, not the visible stellar background.
+
+---
