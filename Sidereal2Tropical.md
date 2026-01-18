@@ -29,4 +29,9 @@ The Committee therefore concluded that strict astronomical solar months were unn
 # Conclusion
 In sum, the modification of the Indian solar calendar was necessitated by the cumulative effects of an historically understandable but scientifically obsolete error in year length, compounded by the absence of a clear distinction between sidereal and tropical reckoning. The Calendar Reform Committee under Prof. M. N. Saha addressed these issues by restoring the calendar’s alignment with the vernal equinox, adopting the tropical year in harmony with Indian tradition, and simplifying the civil structure of months for practical use. The resulting reforms were presented not as a rupture with the past, but as a rational continuation and clarification of the principles implicit in the Sūrya Siddhānta itself.
 
+## References
+1. "Report of the Calendar Reform Committee," Council of Scientific & Industrial Research, New Delhi, India, 1955, pp. 240-241.
+
+2. "Report of the Calendar Reform Committee," Council of Scientific & Industrial Research, New Delhi, India, 1955, p. 245.
+
 ---
