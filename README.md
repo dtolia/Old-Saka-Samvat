@@ -10,7 +10,7 @@ Old Śaka Samvat, therefore, stands as a harmonious blend of ancient tradition a
 
 2. [Necessity for Modification of the Traditional Sidereal Calendar in India](/Sidereal2Tropical.md)
 
-3. FAQs
+3. [FAQs](/Faqs.md)
 
 ## LaTeX Template for Old Śaka Samvat
 Run the [Old Śaka Samvat](/OSS.tex) LaTeX on [Tex Viewer](https://texviewer.herokuapp.com) to create PDF.
