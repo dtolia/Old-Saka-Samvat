@@ -5,17 +5,21 @@ While originally a sidereal calendar, it was converted to a tropical system by P
 
 Old Śaka Samvat, therefore, stands as a harmonious blend of ancient tradition and modern utility.
 
-## Resources
-1. [The Origin of the Śaka Samvat and the Case for the Old Śaka Era](/OssHistory.md)
+![Old Saka Samvat](/OSS_Sample.png "This is how the Old Saka Samvat looks.")
 
-2. [Necessity for Modification of the Traditional Sidereal Calendar in India](/Sidereal2Tropical.md)
-
-3. [FAQs](/Faqs.md)
-
-## LaTeX Template for Old Śaka Samvat
 Run the [Old Śaka Samvat](/OSS.tex) LaTeX on [Tex Viewer](https://texviewer.herokuapp.com) to create PDF.
 
-![Old Saka Samvat](/OSS_Sample.png "This is how the Old Saka Samvat looks.")
+## Resources
+1. [The Origin of the Śaka Samvat and the Case for the Old Śaka Era](/rsrc/OssHistory.md)
+
+2. [Necessity for Modification of the Traditional Sidereal Calendar in India](/rsrc/Sidereal2Tropical.md)
+
+3. [FAQs](/rsrc/Faqs.md)
+
+## LaTeX Template for Old Śaka Samvat
+
+
+
 
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
